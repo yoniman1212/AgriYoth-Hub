@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AgriYoth_Hub</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AgriYoth_Hub.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="~/Img/3d/Saly-44.png" />
+</head>
+<body id="dark">
+    <header id="dark-bb ">
+        <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-light bg-dark box-shadow" id="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/Img/3d/Saly-44.png" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex">
+                    <ul class="navbar-nav flex-grow-1 text-white">
+
+                        <li class="nav-item ">
+                            <a class="nav-link pointer" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Services">Services</a>
+                        </li>
+
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Solutions">Solutions</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Blog">Blog</a>
+
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                Others
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-action="Volentter" asp-controller="home">Volentter</a>
+                                <a class="dropdown-item" asp-action="Beneficialperson" asp-controller="home">Beneficial Person</a>
+                                <a class="dropdown-item" asp-action="Freelancer" asp-controller="home">Freelancer</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="col-md-3 d-flex">
+                        <a asp-controller="Home" asp-action="SignIn" class="btn-1">Sign In</a>
+                        <ul>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn-2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    Sign Up
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" asp-action="BeneficialpersonSignup" asp-controller="home">Beneficial Person</a>
+                                    <a class="dropdown-item" asp-action="EmployerSignup" asp-controller="home">Employer</a>
+                                    <a class="dropdown-item" asp-action="FreelancerSignup" asp-controller="home">Freelancer</a>
+                                    <a class="dropdown-item" asp-action="VolunteerSignup" asp-controller="home">Volentter</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="landing-footer-two">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="~/img/3d/Saly-44.png" alt="">
+                    <p>
+                        AgriYoth Hub is an online platform it have many futures and solution in all African Countries
+                    </p>
+                    <ul class="social-icon">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Feature</a></li>
+                        <li><a href="">Solutions</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Individuals</h3>
+                    <ul>
+                        <li><a href="">Help</a></li>
+                        <li><a href="">Learning</a></li>
+                        <li><a href="">Commincate</a></li>
+                        <li><a href="">Freelancing</a></li>
+                        <li><a href="">Payment methods</a></li>
+                        <li><a href="">Account access</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="">Help center</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Create account</a></li>
+                        <li><a href="">ID verification</a></li>
+                        <li><a href="">Account information</a></li>
+                        <li><a href="">Supported user</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Learn</h3>
+                    <ul>
+                        <li><a href="">Free cources</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
